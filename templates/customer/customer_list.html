@@ -1,0 +1,14 @@
+
+{% block 'content' %}
+
+<h1>Customers</h1>
+
+<ul>
+{% for customer in object_list %}
+
+{% empty %}
+    <li>No customers</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
