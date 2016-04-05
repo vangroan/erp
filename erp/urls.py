@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from erp.views import dashboard
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^customer/', include('erp.customer.urls')),
+	url(r'^$', dashboard, name='dashboard'),
 ]

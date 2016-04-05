@@ -3,7 +3,17 @@
     <title>{% block 'title' %}{% endblock %}</title>
 </head>
 <body>
-    {% block 'content' %}
-        <p>No Content</p>
-    {% endblock %}
+
+	<div id="sidebar">
+		<ul>
+			<li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+			<li><a href="{% url 'customer-list' %}">Customers</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+	{% block 'content' %}
+		<p>No Content</p>
+	{% endblock %}
+	</div>
 </body>
