@@ -1,0 +1,9 @@
+
+{% extends 'base.html' %}
+
+{% block 'title' %}Customer | {{ object.account_number }}{% endblock %}
+
+{% block 'content' %}
+<p>{{ object.account_number }}</p>
+<p>{{ object.name }}</p>
+{% endblock %}
