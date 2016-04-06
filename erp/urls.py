@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^customer/', include('erp.customer.urls')),
+    url(r'^distribution/', include('erp.distribution.urls')),
 	url(r'^$', dashboard, name='dashboard'),
 ]
