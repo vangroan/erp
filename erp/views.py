@@ -1,6 +1,6 @@
 
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 
 
 def dashboard(request):
-    pass
+    return render(request, 'dashboard.html', {})
